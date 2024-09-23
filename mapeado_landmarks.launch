@@ -1,0 +1,11 @@
+<launch>
+   <node pkg="stage_ros" type="stageros" name="stageros" 
+         args="-d $(find mapeado_landmarks)/worlds/ejemplo.world"/>
+   <node name="rviz" pkg="rviz" type="rviz"
+         args="-d $(find mapeado_landmarks)/mapeado_landmarks.rviz"/>
+   <node name="mi_teleop" pkg="mapeado_landmarks" 
+         type="teleop_twist_keyboard.py" output="screen"/>
+   <node pkg="tf2_ros" type="static_transform_publisher" name="map_odom_pub" 
+         args="0 0 0 0 0 0 1 map odom"/>   
+
+</launch>
