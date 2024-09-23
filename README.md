@@ -7,8 +7,8 @@ Plantilla para la implementación del mapeado basado en landmarks, actualizando 
 Si no tienes un *workspace* de ROS creado, créalo ahora:
 
 ```bash
-mkdir rob_mov_ws
-cd rob_mov_ws
+mkdir robots_moviles_ws
+cd robots_moviles_ws
 mkdir src
 cd src
 ```
